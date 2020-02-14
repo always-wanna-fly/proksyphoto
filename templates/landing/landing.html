@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+      <!-- My Best Photos-->
+      <section class="section bg-white text-center">
+        <!-- Slick Carousel-->
+        <div class="slick-wrap">
+          <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="false" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="{% static 'images/slider/1.jpg'%}" data-lightgallery="item"><img class="thumb-ann__image" src="{% static 'images/slider/1.jpg'%}" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Юлія</p>
+                      <p class="thumb-ann__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="{% static 'images/slider/2.jpg'%}" data-lightgallery="item"><img class="thumb-ann__image" src="{% static 'images/slider/2.jpg'%}" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Олександра</p>
+                      <p class="thumb-ann__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="{% static 'images/slider/3.jpg'%}" data-lightgallery="item"><img class="thumb-ann__image" src="{% static 'images/slider/3.jpg'%}" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Amanda</p>
+                      <p class="thumb-ann__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slick-slide-inner">
+                <div class="slick-slide-caption"><a class="thumb-ann thumb-mixed_large" href="{% static 'images/slider/4.jpg'%}" data-lightgallery="item"><img class="thumb-ann__image" src="{% static 'images/slider/4.jpg'%}" alt="" width="961" height="664"/>
+                    <div class="thumb-ann__caption"> 
+                      <p class="thumb-ann__title heading-3">Harold &amp; Mary</p>
+                      <p class="thumb-ann__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.</p>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-md bg-white text-center">
+        <div class="shell-fluid">
+          <p class="heading-1">Portfolio</p>
+          <div class="isotope thumb-ruby-wrap wow fadeIn" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="{% static 'images/1.jpg'%}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/1.jpg'%}" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Христина</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="{% static 'images/flow.jpg'%}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/flow.jpg'%}" alt="" width="444" height="683"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Kate</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну фотосесію love, я буду рада допомогти вам.
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="{% static 'images/book.jpg'%}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/book.jpg'%}" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Аня</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="{% static 'images/4.jpg'%}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/4.jpg'%}" alt="" width="444" height="683"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Andriy &amp; Kate</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну фотосесію, я буду рада допомогти вам.
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="{% static 'images/weeding.jpg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/weeding.jpg' %}" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Яна &amp; Андрій</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну весільну фотографію, я буду рада допомогти вам
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item"><a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="{% static 'images/mause.jpg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/mause.jpg' %}" alt="" width="440" height="327"/>
+                        <div class="thumb-ruby__caption">
+                          <p class="thumb-ruby__title heading-3">Lisa</p>
+                          <p class="thumb-ruby__text">Якщо ви шукаєте якісну весільну фотографію, я буду рада допомогти вам
+                            <!-- Portfolio-->
+                          </p>
+                        </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {% include 'landing/contact_form.html' %}
+{% endblock %}
+

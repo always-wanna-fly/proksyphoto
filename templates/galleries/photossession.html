@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+
+            {% for image_item in gallery.galleryimage_set.all %}
+                <div class="col-lg-3 col-md-4 col-6 thumb">
+                    <div class="product-item">
+                        <a data-fancybox="gallery" href="{{ image_item.image.url }}" >
+                            <img class="img-fluid" src="{{ image_item.image.url }}" alt="">
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

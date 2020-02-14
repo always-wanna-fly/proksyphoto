@@ -1,0 +1,48 @@
+
+      <!-- Book Your Photo Shoot-->
+      <section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left range-md-reverse range-md-middle">
+            <div class="cell-sm-10 cell-md-6 wow fadeInRight">
+              <div class="box-width-4 box-centered">
+                <p class="heading-1">Забронюйте <br> Вашу подію</p>
+                <p>Щоб замовити фотосесію, будь ласка, внесіть якомога більше деталей щодо вашої конкретної події. Я уточню умови відразу після отримання вашого повідомлення!</p>
+              </div>
+            </div>
+            <div>
+             <div class="cell-sm-10 cell-md-6 wow fadeInLeft">
+                  <article class="box-line"><span></span><span></span><span></span><span></span>
+                    <div class="box-line__main">
+                      <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="POST">{% csrf_token %}
+                          <div class="form-group">
+                          <input class="form-input" id="contact-date" type="text" data-time-picker="date" name="{{ form.event_date.name }}" data-constraints="@Required">
+                          <label class="form-label" for="contact-date">Дата події</label>
+                        </div>
+
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-name" type="text" name="{{ form.name.name}}" data-constraints="@Required">
+                          <label class="form-label" for="contact-name">Ваше ім'я</label>
+                        </div>
+                        <div class="form-wrap">
+                            <label class="form-label" for="phone">Номер телефону</label>
+                          <input class="form-input"  id="phone" name="{{ form.call_number.name}}" data-constraints="@Required">
+
+                        </div>
+
+                        <div class="form-wrap">
+                          <label class="form-label" for="contact-message">Ваше повідомлення</label>
+                          <textarea class="form-input" id="contact-message" name="{{ form.message.name}}" data-constraints="@Required"></textarea>
+                        </div>
+
+
+                        <div class="form-wrap form-button offset-1">
+                          <button class="button button-block button-primary-outline button-ujarak" type="submit">замовити</button>
+                        </div>
+                      </form>
+                    </div>
+                  </article>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>

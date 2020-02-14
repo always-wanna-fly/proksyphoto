@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="section section1">
+  <div class="container">
+    <div class="row">
+      {% for gallery_image in gallery_images %}
+      <div class="col-lg-3">
+        <div class="product-item">
+            <a href="{% url 'galleries' gallery_image.gallery.id %}">
+              <img src="{{ gallery_image.image.url }}" alt="">
+            </a>
+            <div>
+          </div>
+          <h4>{{ gallery_image.gallery.name }}</h4>
+          <p>
+            {{gallery_image.gallery.description|truncatechars_html:20}}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+

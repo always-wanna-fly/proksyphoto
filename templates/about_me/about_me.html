@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{#    <div class="container">#}
+{##}
+{#        <div class="row">#}
+{#            <div class="cell-md-10 cell-lg-8">#}
+{#              <p><img src="{% static 'images/about_me_1.jpg' %}" alt="" width="385" height="240">Привіт! Мене звати Ксю, або ж просто Оксана) Бажання творити оточує мене постійно, але саме фотозйомка - це таке заняття, яке сміливо можна віднести до постійних та улюблених.#}
+{#                  Люблю щирість та простоту. Бачу в кожному з Вас, щось особливе і намагаюсь під час зйомки ввійти з вами в контакт, щоб фото вийшли дійсно "про особливих вас". Я буду рада зробити для вас красиві, живі та якісні знімки. Пропоную такі формати зйомок: сімейні фотосесії, дитячі,#}
+{#                  індивідуальні, lovestory. І пам'ятайте: Кожен момент в житті - важливий!#}
+{#              </p>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#            <div class="cell-md-10 cell-lg-8">#}
+{#              <p><img class="img-right" src="{% static 'images/3.jpg' %}" alt="" width="770" height="485">Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.#}
+{#              </p>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+<section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left">
+            <div class="cell-sm-6 cell-md-5">
+              <div class="thumb-bordered"><img src="{% static 'images/about_me_1.jpg' %}" alt="" width="437" height="435">
+              </div>
+            </div>
+            <div class="cell-sm-6 cell-md-7">
+              <div class="box-width-3 box-centered">
+                <article class="quote-big">
+                  <p class="q">Привіт! Мене звати Ксю, або ж просто Оксана).</p>
+                </article>
+                <div class="divider"></div>
+                <p class="text-spacing-05">Бажання творити оточує мене постійно, але саме фотозйомка - це таке заняття, яке сміливо можна віднести до постійних та улюблених.
+                  Люблю щирість та простоту. Бачу в кожному з Вас, щось особливе і намагаюсь під час зйомки ввійти з вами в контакт, щоб фото вийшли дійсно "про особливих вас". Я буду рада зробити для вас красиві, живі та якісні знімки. Пропоную такі формати зйомок: сімейні фотосесії, дитячі,
+                  індивідуальні, lovestory. І пам'ятайте: Кожен момент в житті - важливий!</p>
+                <div class="group-3-columns" data-lightgallery="group">
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/family.jpg' %}" data-lightgallery="item"><img src="{% static 'images/family.jpg' %}" alt="" width="120" height="171">
+                      <div class="thumb-light__overlay"></div></a></div>
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/ind.jpg' %}" data-lightgallery="item"><img src="{% static 'images/ind.jpg' %}" alt="" width="120" height="171">
+                      <div class="thumb-light__overlay"></div></a></div>
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/lovestory.jpg' %}" data-lightgallery="item"><img src="{% static 'images/lovestory.jpg' %}" alt="" width="120" height="171">
+                      <div class="thumb-light__overlay"></div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{% endblock %}
