@@ -88,6 +88,39 @@
    }
 },
 {
+   "model": "gallery.gallerycategory",
+   "pk": 1,
+   "fields": {
+      "name": "test",
+      "is_active": true
+   }
+},
+{
+   "model": "gallery.gallery",
+   "pk": 1,
+   "fields": {
+      "name": "test",
+      "description": "",
+      "is_active": true,
+      "category": 1,
+      "short_description": "",
+      "created": "2020-02-15T10:57:37.121Z",
+      "updated": "2020-02-15T10:57:37.121Z"
+   }
+},
+{
+   "model": "gallery.galleryimage",
+   "pk": 1,
+   "fields": {
+      "gallery": 1,
+      "image": "gallery_images/BRM_7052.jpg",
+      "is_main": true,
+      "is_active": true,
+      "created": "2020-02-15T10:57:37.124Z",
+      "updated": "2020-02-15T10:57:37.124Z"
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -463,6 +496,32 @@
       "date_joined": "2020-02-14T14:38:23.106Z",
       "groups": [],
       "user_permissions": []
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 1,
+   "fields": {
+      "action_time": "2020-02-15T10:57:12.379Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 2,
+   "fields": {
+      "action_time": "2020-02-15T10:57:37.141Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0424\\u043e\\u0442\\u043e\\u0433\\u0440\\u0430\\u0444\\u0456\\u044f\", \"object\": \"1\"}}]"
    }
 }
 ]
